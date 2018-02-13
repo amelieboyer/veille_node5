@@ -50,14 +50,14 @@ app.get('/', (req, res) => {
 
 })
 
-app.get('/traiter_get', function (req, res) {
+app.get('/ajouter', function (req, res) {
 
  // Preparer l'output en format JSON
 
 console.log('la route /traiter_get')
 
 // on utilise l'objet req.query pour récupérer les données GET
- reponse = {
+ /*reponse = {
  prenom:req.query.prenom,
  nom:req.query.nom,
  telephone:req.query.telephone,
@@ -76,7 +76,13 @@ fs.readFile(__dirname + "/public/data/" + "membres.json", 'utf8', function (err,
 
 	})
  res.end(JSON.stringify(reponse));
-})
+})*/
+
+ db.collection('adresse').save(req.query, (err, result) => {
+ if (err) return console.log(err)
+ console.log('sauvegarder dans la BD')
+ res.redirect('/')
+ })
 
 
 })
