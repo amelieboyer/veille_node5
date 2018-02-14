@@ -1,6 +1,9 @@
 body {
   background-color: #aaa;
 }
+div {
+  background-color: #000000;
+}
 table {
   background-color: #ffffff;
 }
