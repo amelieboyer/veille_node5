@@ -1,6 +1,9 @@
 body {
   background-color: #aaa;
 }
+table {
+  background-color: #ffffff;
+}
 .tableau {
   border-collapse: collapse;
 }
