@@ -8,15 +8,17 @@
 </head>
 <body>
 	<h1>Exercice 5</h1>
- <table class="tableau">
- <% adresses.forEach(elm => {%>
- <tr>
- <td><%= elm.prenom %></td>
- <td><%= elm.nom %></td>
- <td><%= elm.telephone %></td>
- <td><%= elm.courriel %></td>
- </tr>
- <% }) %>
- </table>
+	<div>
+ 		<table class="tableau">
+ 			<% adresses.forEach(elm => {%>
+ 			<tr>
+ 				<td><%= elm.prenom %></td>
+ 				<td><%= elm.nom %></td>
+ 				<td><%= elm.telephone %></td>
+ 				<td><%= elm.courriel %></td>
+ 			</tr>
+ 			<% }) %>
+ 		</table>
+</div>
 </body>
 </html>
