@@ -1,6 +1,9 @@
 body {
   background-color: #aaa;
 }
+h1 {
+  text-align: center;
+}
 table {
   background-color: #ffffff;
 }
